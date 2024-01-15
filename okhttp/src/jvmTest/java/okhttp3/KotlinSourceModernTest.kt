@@ -1126,6 +1126,8 @@ class KotlinSourceModernTest {
     val webSocket = object : WebSocket {
       override fun request(): Request = TODO()
       override fun queueSize(): Long = TODO()
+      override fun maxQueueSize(): Long = TODO()
+      override fun setMaxQueueSize(newSize: Long) = TODO()
       override fun send(text: String): Boolean = TODO()
       override fun send(bytes: ByteString): Boolean = TODO()
       override fun close(code: Int, reason: String?): Boolean = TODO()
